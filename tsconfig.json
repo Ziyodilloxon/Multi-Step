@@ -5,15 +5,15 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true, // Import va eksport uchun
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "ESNext", // Brauzer uchun mos modul
+    "moduleResolution": "Classic", // Brauzer muhitida
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false, // JavaScript fayllarini chiqarmaslik
     "jsx": "react-jsx"
   },
   "include": ["src"],
